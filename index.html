@@ -1,25 +1,130 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-	<title>My Page</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0-rc.1/jquery.mobile-1.3.0-rc.1.min.css" />
-	<script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.0-rc.1/jquery.mobile-1.3.0-rc.1.min.js"></script>
-</head> 
-<body> 
 
-<div data-role="page">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>ListApp</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<style>
+		img.fullscreen {
+			max-height: 100%;
+			max-width: 100%;
+		}		
+	</style>
+</head>
+<body>
+<div data-role="page" id="photos">
+	<header data-role="header">
+		<h1>My Photos</h1>
+	</header>
+	<article data-role="content">
+		<ul data-role="listview"  data-filter="true">
+			<li>
+				<a href="#atee-snow">
+				<h1>My First Snow</h1>
+				<img src="images/atee-snow-tn.jpg" alt="Ateendra Snow" />
+				<p>This picture was taken during a snowy day.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#atee-beach">
+				<h1>Me at Beach</h1>
+				<img src="images/atee-beach-tn.jpg" alt="Ateendra Beach" />
+				<p>This is my second visit at this beach... Last time my friend tooks me here and this time my father.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#atee-play">
+				<h1>Ateendra at Play Area</h1>
+				<img src="images/atee-play-tn.jpg" alt="Ateendra Play" />
+				<p>This picture is taken at poconos children play area. I was just tired.</p>
+				</a>
+			</li>
+		</ul>
+	</article>
+	<footer data-role="footer" data-position="fixed">
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="#photos" data-icon="home" data-iconpos="notext">Home</a></li>
+				<li><a href="#photos" data-icon="grid" data-iconpos="notext">Photos</a></li>
+				<li><a href="#info" data-icon="info" data-iconpos="notext">About</a></li>
+			</ul>
+		</nav>
+	</footer>
+</div><!-- Page Photos -->
 
-	<div data-role="header">
-		<h1>My Title</h1>
-	</div><!-- /header -->
+	<div data-role="page" id="atee-snow">
+		<header data-role="header">
+			<h1>Min Pin</h1>
+			<a href="#photos" data-icon="grid">Back</a>
+		</header>
+		<img src="images/atee-snow.jpg" class="fullscreen" alt="Ateendra Snow" />
 
-	<div data-role="content">	
-		<p>Hello world</p>		
-	</div><!-- /content -->
+	<footer data-role="footer" data-position="fixed">
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="#photos" data-icon="home" data-iconpos="notext">Home</a></li>
+				<li><a href="#photos" data-icon="grid" data-iconpos="notext">Photos</a></li>
+				<li><a href="#info" data-icon="info" data-iconpos="notext">About</a></li>				
+			</ul>
+		</nav>
+	</footer>
+	</div><!-- Page Atee Snow -->
+	
+	<div data-role="page" id="atee-beach">
+		<header data-role="header">
+			<h1>Gummy Bears</h1>
+			<a href="#photos" data-icon="grid">Back</a>
+		</header>
+		<img src="images/atee-beach.jpg" class="fullscreen" alt="Ateendra Beach" />
 
-</div><!-- /page -->
+	<footer data-role="footer" data-position="fixed">
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="#photos" data-icon="home" data-iconpos="notext">Home</a></li>
+				<li><a href="#photos" data-icon="grid" data-iconpos="notext">Photos</a></li>
+				<li><a href="#info" data-icon="info" data-iconpos="notext">About</a></li>		
+			</ul>
+		</nav>
+	</footer>
+	</div><!-- Page Atee Beach --> 
+
+	<div data-role="page" id="atee-play">
+		<header data-role="header">
+			<h1>Gummy Bears</h1>
+			<a href="#photos" data-icon="grid">Back</a>
+		</header>
+		<img src="images/atee-play.jpg" class="fullscreen" alt="Ateendra Play" />
+	<footer data-role="footer" data-position="fixed">
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="#photos" data-icon="home" data-iconpos="notext">Home</a></li>
+				<li><a href="#photos" data-icon="grid" data-iconpos="notext">Photos</a></li>
+				<li><a href="#info" data-icon="info" data-iconpos="notext">About</a></li>		
+			</ul>
+		</nav>
+	</footer>
+	</div><!-- Page Atee Play --> 
+
+	<div data-role="page" id="info">
+		<header data-role="header">
+			<h1>About this site</h1>
+			<a href="#photos" data-icon="grid">Back</a>
+		</header>
+		<p>This is just a simple jquery mobile site. That has been designed for Ateendra.</p>
+	<footer data-role="footer" data-position="fixed">
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="#photos" data-icon="home" data-iconpos="notext">Home</a></li>
+				<li><a href="#photos" data-icon="grid" data-iconpos="notext">Photos</a></li>
+				<li><a href="#info" data-icon="info" data-iconpos="notext">About</a></li>		
+			</ul>
+		</nav>
+	</footer>
+	</div><!-- Page Atee Play --> 
 
 </body>
 </html>
